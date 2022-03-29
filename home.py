@@ -5,11 +5,11 @@ import jinja2
 
 app_obj = Flask(__name__)
 app_obj.config['DEBUG'] =True
+name = 'Lisa'
+city_names = ["Paris","London","Rome","Tahiti"]
 
 @app_obj.route('/')
 def home():
-    name = 'Lisa'
-    city_names = ["Paris","London","Rome","Tahiti"]
     return f'''<html>
     <head>
         <title>Homework 3</title>
