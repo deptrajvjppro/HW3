@@ -15,7 +15,7 @@ def home():
         <title>Homework 3</title>
     </head>
     <body>
-        <h1>Welcome {name}</h1>
+        <h1>Welcome {name}!</h1>
         <p>
             <a href = "https://www.google.com/">not google</a>
                 <ul>
