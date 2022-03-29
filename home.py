@@ -7,7 +7,7 @@ app_obj = Flask(__name__)
 app_obj.config['DEBUG'] =True
 
 @app_obj.route('/')
-def hello():
+def home():
     name = 'Lisa'
     city_names = ["Paris","London","Rome","Tahiti"]
     return f'''<html>
