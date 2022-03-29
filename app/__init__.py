@@ -3,8 +3,8 @@ import os
 
 SECRET_KEY = os.urandom(32)
 
-app_obj = Flask(__name__)
+myobj = Flask(__name__)
 
-app_obj.config['SECRET_KEY'] = SECRET_KEY
+myobj.config['SECRET_KEY'] = SECRET_KEY
 
 from app import routes
