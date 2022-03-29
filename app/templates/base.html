@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 3</title>
+    </head>
+    <body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li> {{message}} </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+    <h1>Welcome {{name}}!</h1>
+    <p>
+        <a href ="www.google.com">not google</a>
+        <ul>
+            {% for city in city_names %}
+              <li>{{ city }}</li>
+            {% endfor %}  
+            </ul>
+    </p>
+        {% block content %} {% endblock %}
+    </body>
+</html>
