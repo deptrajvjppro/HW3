@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 3</title>
+    </head>
+    <body>
+        {%with messages = get_flashed_messages() %}
+        {%if message %}
+        <ul>
+            {% for message in messages %}
+            <li>{{messages}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        
+        {% block content %} {% endblock %}
+    </body>
+</html>
