@@ -1,15 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <h1>Welcome {{name}}</h1>
         <p>
-            <a href = "https://www.google.com/">not google</a>
+            <a href ="www.google.com">not google</a>
             <ul>
                 {% for city in city_names %}
                   <li>{{ city }}</li>
                 {% endfor %}  
                 </ul>
         </p>
-
+        <form action = "" method ="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.cityname.label }}<br>
+                {{ form.cityname(size = 32) }}
+            </p>
+            <p>
+                {{ form.submitButton() }}
+            </p>
+        </form>
+        
 {% endblock %}
